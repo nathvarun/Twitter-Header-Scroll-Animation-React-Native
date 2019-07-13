@@ -2,7 +2,10 @@
   "presets": ["babel-preset-expo"],
   "env": {
     "development": {
-      "plugins": ["transform-react-jsx-source"]
+      "plugins": []
+    },
+    "production": {
+      "plugins": ["transform-remove-console"]
     }
   }
 }
